@@ -19,7 +19,7 @@ const Counter: React.FC = () => {
   return (
     <div className="p-4">
       <h2 className="text-4xl font-bold mb-4">Counter App</h2>
-      <p className="text-2xl mt-4">Count: {count}</p>
+      <p className="text-2xl my-4 text-center">Count: {count}</p>
       <div className="flex items-center justify-center">
         <button
           className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mr-2"

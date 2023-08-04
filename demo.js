@@ -1,4 +1,5 @@
 import toolkit from "@reduxjs/toolkit";
+import logger from "redux-logger";
 
 //InitialState
 const initialState = {
@@ -60,6 +61,8 @@ const counterSlice2 = toolkit.createAction(initialState, {
 //Store
 const store = toolkit.configureStore({
   reducer: counterSlice,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware().concat(logger.createLogger()),
 });
 
 //dispatch action

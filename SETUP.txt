@@ -1,0 +1,35 @@
+1. npm create vite@latest
+2. select "react"
+3. select "typescript"
+4. npm i
+5. npm install -D tailwindcss postcss autoprefixer
+6. npx tailwindcss init -p
+7. go to tailwind.config.js file and replace the all content with following:
+   module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+8. replace all content in index.css file with the following:
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+
+9. Eg.:
+
+function App() {
+
+  return (
+    <div className="min-h-screen flex justify-center items-center">
+      <h1 className="text-3xl font-bold text-blue-600">
+      Install & Setup Vite + React + Typescript + Tailwind CSS 3
+      </h1>
+    </div>
+  );
+}
+
+export default App;
